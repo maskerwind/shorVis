@@ -1,0 +1,165 @@
+.show{
+	float:left;
+	padding:2px;
+	width: 50%;
+		
+	margin-top: 25px;
+}
+
+.control{
+	float:right;
+	width: 45%;
+	margin-top: 25px;
+}
+
+.circuit{
+	position: relative;
+	left: 20px;
+	width: 650px;
+	margin-top: 25px;
+	border: 1px solid #8a8a8a;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.registers{
+	position: relative;
+	left: 20px;
+	width: 650px;
+	margin-top: 25px;
+	border: 1px solid #8a8a8a;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+
+
+.button {
+    background-color: #202020;
+    border: none;
+    border-radius: 300px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Times, sans-serif;
+    margin: 4px 2px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+	color: #cc0000;
+	font-weight: bold;
+}
+
+.text {
+	color: #FFFFFF;
+	font-family: Serif;
+	margin-left: 10px;
+}
+
+#controller{
+	position: relative;
+	left: 10px;
+	width: 550px;
+	height: 320px;
+	margin-top: 25px;
+	border: 1px solid #8a8a8a;
+	border-radius: 20px;
+}
+
+#description{
+	position: relative;
+	left: 10px;
+	width: 550px;
+	margin-top: 25px;
+	border: 1px solid #8a8a8a;
+	border-radius: 20px;
+}
+
+#header {
+	position: absolute;
+	left: 50px;
+	top: 10px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 30px;
+	color: white;
+	padding: 5px;
+}
+
+#logo {
+    position:absolute;
+    left:0%;
+}
+
+#about {
+    font-style: italic;
+    font-size: 15px;
+    display: inline-block;
+}
+
+html,body {
+	background-color: #000000;
+	margin:0;
+    padding:0;
+}
+
+h3{
+	color: #FFFFFF;
+	margin-left: 10px;
+}
+
+#nav{
+    background-color: #233647;
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+	font-weight: bold;
+    display: inline-block;
+    margin: 8px;
+    padding-top: 0;
+}
+nav li a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-family: arial;
+}
+nav li a:hover{
+    background-color: white;
+    color: #233647;
+}
+ 
+#wrapper {
+	overflow: hidden;
+}
+
+#footer {
+	border-top:1px solid #6e6e6e;
+	background-color: #202020; 
+	margin-top: 25px;
+	height :120px;   /* Height of the footer */
+}
+
+.personal{
+	float:left;
+	position: relative;
+	list-style: none;
+	left:19%;
+	top:45px;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	text-align: center;
+	color: #7c7c7c;
+}

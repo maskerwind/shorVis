@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8"> 
+		<link href="css/style.css" rel="stylesheet" type="text/css" /> 
+		<link href="css/icon.css" rel="stylesheet" type="text/css" /> 
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id = 'wrapper'>
+			<div id = 'nav'>
+			    <nav>
+					<ul>
+					    <li><img src="logoweb.png" id = "logo"></li>
+					    <li><div id = "header">Shor's Alogrithm Simulator</div></li>
+					    <li><a href='#'>NEW PROJECT</a></li>
+					    <li><a href='#controller'>CONTROLLER</a></li>
+					    <li><a href='#description'>DESCRIPTION</a></li>
+					    <li><a href="#footer"><div id = "about">About</div></a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div id = 'main'>
+				
+				<div class = "control">
+					<div id = "controller">
+						<form>
+							<h3>Please Input N to be factored: <input id="num_N" value="N to be factored" ></h3>
+							<p> <input type="button" class= "button" style='font-size:15px' value="Show Registers" onclick="Show_Registers();"></p>
+					        <p> <input type="button" class= "button" style='font-size:15px' value="Initiate States" onclick="Animation_Initiate();">
+					        	<input type="button" class= "button" style='font-size:15px' value="Hadamard" onclick="Animation_Hardmard();">
+						    	<input type="button" class= "button" style='font-size:15px' value="Unitary Transformation" onclick="Animation_Unitary();"></p>
+						    <p> <input type="button" class= "button" style='font-size:15px' value="Measure The Second Register" onclick="Animation_MeasureB();"></p> 
+						    <p> <input type="button" class= "button" style='font-size:15px' value="Reverse QFT" onclick="Animation_InverseQFT();">
+						    	<input type="button" class= "button" style='font-size:15px' value="Measure The Second Register" onclick="Animation_MeasureA();"></p> 
+					    </form>
+				    </div>
+
+					<div id = "description">
+				    	<h3>Description:</h3>
+				    	<div id = "des">
+				    	</div>
+				    	<p display="none" id = "result_p"></p>
+				    	<p display="none" id = "result_q"></p>
+				    </div>
+			    </div>
+
+			    <div class = "show">
+					<div class = "circuit">
+						<h3><div id="text_circuit">The circuit of Shor's Alogrithm:</div></h3>
+						<canvas id="Circuit" style="display: none"></canvas>
+					</div>
+
+					<div class = "registers" >
+						<h3 id="text_Reg1">The First Register:</h3>
+						<div id="size_Reg1" class="text">Size:0</div>
+						<div id="value_Reg1" class="text">Value:NaN</div>
+						<div id="value_current" style="display: none" class="text">  [CURRENT]:  </div>
+						<canvas id="Reg1" style="display: none"></canvas>
+						<br/>
+						<h3><div id="text_Reg2">The Second Register:</div></h3>
+						<div id="size_Reg2" class="text">Size:0</div>
+						<div id="value_Reg2" class="text">Value:NaN</div>
+						<canvas id="Reg2" style="display: none"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id = 'footer'>
+
+			<ul class = "social">
+			      <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+			      <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+			      <li class="youtube"><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+			      <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+			      <li class="linkedin"><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			</ul>
+			<ul class = "personal">
+				<li class="name">Posted by: Zewei Tao</li>
+				<li class="time">2017</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="implement.js"></script>
+	</body>
+	
+</html>
